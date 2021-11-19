@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Trang chủ </title>
+    <link rel="stylesheet" href="All.css" media="screen">
+    <link rel="stylesheet" href="Trang-chủ-.css" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body class="u-body u-overlap"><header class="u-clearfix u-header u-header" id="sec-8d35">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#"><h3>NSDM</h3></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="Trang-chủ-.html">Trang chủ</a></li>
+          <li><a href="Đăng-ký.html"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
+          <li><a href="Đăng-nhập.html"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- <div class="container"> -->
+    <div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li class="item1 active"></li>
+        <li class="item2"></li>
+        <li class="item3"></li>
+        <li class="item4"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+  
+        <div class="item active">
+          <div class="skrollable skrollable-between u-active u-align-center u-carousel-item u-clearfix u-image u-shading u-section-1-1" src="" data-image-width="1280" data-image-height="772">
+            <div class="u-align-left u-clearfix u-sheet u-sheet-1">
+              <div class="u-container-style u-expanded-width-xs u-group u-group-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <h1 class="u-align-center u-custom-font u-font-merriweather u-text u-text-1"> F​ast Food<br>
+                  </h1>
+                  <h1 class="u-align-center u-text u-text-2"> Order food anytime, anywhere</h1>
+                  <p class="u-align-center u-text u-text-3"> Là một trong những thương hiệu thức ăn nhanh có quy mô lớn ở TP.Hồ Chí Minh, NSDM&nbsp;Fast Food mang đến cho thực khách những bữa ăn tuyệt vời, tiết kiệm thời gian. Được thành lập vào năm 2021 tại Việt Nam, thương hiệu NSDM Fast Food&nbsp;&nbsp;mang đến cho người dùng Việt Nam khá nhiều những món đồ ăn nhanh hấp dẫn khác nhau: Big Mac, Hamburger, Chicken McNuggets, Egg McMuffin… .</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="item">
+          <div class="skrollable skrollable-between u-align-center u-carousel-item u-clearfix u-image u-shading u-section-1-2" src="" data-image-width="1280" data-image-height="948">
+            <div class="u-clearfix u-sheet u-sheet-1">
+              <h1 class="u-text u-text-1">NSDM</h1>
+              <p class="u-large-text u-text u-text-variant u-text-2">Sang trọng - Tinh tế - Đẳng cấp</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="item">
+          <div class="skrollable skrollable-between u-align-center u-carousel-item u-clearfix u-image u-shading u-section-1-3" src="" data-image-width="1280" data-image-height="948">
+            <div class="u-clearfix u-sheet u-sheet-1">
+              <h1 class="u-text u-text-1">NSDM</h1>
+              <p class="u-large-text u-text u-text-variant u-text-2">An toàn - Sạch sẽ - Vệ sinh</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="item">
+          <div class="skrollable skrollable-between u-align-center u-carousel-item u-clearfix u-image u-shading u-section-1-4" src="" data-image-width="1280" data-image-height="948">
+            <div class="u-clearfix u-sheet u-sheet-1">
+              <h1 class="u-text u-text-1">NSDM</h1>
+              <p class="u-large-text u-text u-text-variant u-text-2">Ưu đãi - Free ship - Sale lớn</p>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  <!-- </div> -->
+  
+  <script>
+  $(document).ready(function(){
+    // Activate Carousel
+    $("#myCarousel").carousel();
+      
+    // Enable Carousel Indicators
+    $(".item1").click(function(){
+      $("#myCarousel").carousel(0);
+    });
+    $(".item2").click(function(){
+      $("#myCarousel").carousel(1);
+    });
+    $(".item3").click(function(){
+      $("#myCarousel").carousel(2);
+    });
+    $(".item4").click(function(){
+      $("#myCarousel").carousel(3);
+    });
+      
+    // Enable Carousel Controls
+    $(".left").click(function(){
+      $("#myCarousel").carousel("prev");
+    });
+    $(".right").click(function(){
+      $("#myCarousel").carousel("next");
+    });
+  });
+  </script>
+    <section class="u-clearfix u-palette-3-base u-valign-middle u-section-2" id="carousel_d929">
+      <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-container-style u-layout-cell u-left-cell u-shape-rectangle u-size-28 u-layout-cell-1">
+              <div class="u-container-layout u-valign-bottom u-container-layout-1">
+                <h1 class="u-align-center u-custom-font u-font-merriweather u-text u-text-1" data-animation-name="rollIn" data-animation-duration="1750" data-animation-delay="0" data-animation-direction="">Fast Food<br>Món ăn nhanh<br>
+                </h1>
+                <p class="u-align-left u-text u-text-2" data-animation-name="rollIn" data-animation-duration="1750" data-animation-delay="0" data-animation-direction="">Thức ăn nhanh&nbsp;(tiếng Anh gọi là&nbsp;fast food), là thuật ngữ chỉ thức ăn&nbsp;có thể được chế biến và phục vụ cho người ăn rất nhanh chóng. Trong khi bất kỳ bữa ăn với ít thời gian chuẩn bị có thể được coi là thức ăn nhanh, thông thường thuật ngữ này nói đến thực phẩm được bán tại một nhà hàng hoặc cửa hàng với các thành phần làm nóng trước hoặc được nấu sẵn, và phục vụ cho khách hàng trong một hình thức đóng gói mang đi. Thuật ngữ&nbsp;fast food&nbsp;đã được công nhận trong&nbsp;từ điển tiếng anh&nbsp;Merriam - Webster năm 1951.<br>
+                  <br>
+                  <br>Thương hiệu thức ăn&nbsp;​NSDM&nbsp;Fast Food bên cạnh chất lượng, mùi vị các món ăn. thương hiệu thức ăn nhanh nổi tiếng McDonald’s còn được đánh giá vô cùng cao bởi các tiêu chuẩn vệ sinh, an toàn thực phẩm.Những món ăn đóng gói cho khách hàng luôn được đựng trong những&nbsp;<b>mẫu hộp giấy đựng thức ăn chất lượng</b>, đảm bảo vệ sinh và an toàn cho sức khỏe của người tiêu dùng. Đây là một trong số những thương hiệu thức ăn nhanh hàng đầu tại Việt Nam và được người tiêu dùng vô cùng yêu thích.<br>
+                  <br>
+                  <br><b>Thương hiệu hamburger </b>
+                  <span style="font-weight: 700;">NSDM&nbsp;Fast Food</span>
+                  <br>
+                  <br>Những chiếc hamburger phục vụ khách hàng đều sẽ được đựng trong những mẫu hộp giấy được thiết kế, in ấn chuyên dùng. In hộp giấy đựng bánh hamburger giúp những chiếc bánh giữ được trọn vẹn nhất hương vị, cho khách hàng cảm nhận được mùi vị thơm ngon của những chiếc bánh hamburger nổi tiếng thế giới.<br>
+                  <br>
+                  <br><b>Thương hiệu gà rán </b>
+                  <span style="font-weight: 700;"> NSDM&nbsp;Fast Food</span>
+                  <br>
+                  <br>Đây là một đại diện đến từ Hàn Quốc và sở hữu công thức làm ra những món gà rán làm mê hoặc người dùng. Tuy xuất hiện khá trễ tại Việt Nam, nhưng nhờ sự phổ biến của làn sóng văn hóa Hàn Quốc, thương hiệu gà rán ​NSDM&nbsp;Fast Food đã phát triển vô cùng nhanh chóng. &nbsp;Gà rán ​NSDM&nbsp;Fast Food thường được đóng gói trong những mẫu&nbsp;<b>in hộp giấy đựng thức ăn</b>&nbsp;chắc chắn, cứng cáp để chất lượng món ăn được bảo quản tốt nhất.<br>
+                </p>
+              </div>
+            </div>
+            <div class="u-container-style u-image u-layout-cell u-right-cell u-size-32 u-image-1" data-image-width="1200" data-image-height="1500">
+              <div class="u-container-layout u-container-layout-2">
+                <h1 class="u-align-left u-text u-title u-text-3">Giới thiệu</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-3" id="carousel_4df5">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-subtitle u-text u-text-1">Món ăn đặc biệt trong ngày!</h2>
+        <p class="u-large-text u-text u-text-variant u-text-2"> Kiểm tra các chương trình đặc biệt trong ngày của chúng tôi và được giảm giá cho tất cả các bữa ăn của chúng tôi và giao hàng nhanh chóng đến bất kỳ địa điểm nào trong Thành phố Hồ Chí Minh.</p>
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-radius-50 u-repeater-item u-shape-round u-white u-list-item-1">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <h5 class="u-align-center u-custom-font u-font-merriweather u-text u-text-default u-text-3"> Fried chicken</h5>
+                <img class="u-expanded-width u-image u-image-1" src="images/01bec8b3912b8ad43dac980561e5081f05cbfccc852cfc5e3fd856e7c48b986c71c80222342110dc5ff2795150657979f3664f807455df12ceade1_1280.jpg" data-image-width="1280" data-image-height="853" data-animation-name="zoomIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
+                <h6 class="u-align-center u-custom-font u-text u-text-default u-text-font u-text-4">100.000đ</h6>
+                <p class="u-align-left u-text u-text-5"> Nổi tiếng thế giới với công thức chế biến gà rán truyền thống Original Recipe, được tạo bởi cùng một công thức pha trộn bí mật 11 loại thảo mộc và gia vị khác nhau do Đại tá Harland Sanders hoàn thiện hơn nửa thế kỷ trước.</p>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-radius-50 u-repeater-item u-shape-round u-white u-list-item-2">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <h5 class="u-align-center u-custom-font u-font-merriweather u-text u-text-default u-text-6">Humberger</h5>
+                <img class="u-expanded-width u-image u-image-2" src="images/6ae0d7fad7449ce23f3d2e283ae8788c80820e07f847d82a168f5cc710206cdec25411a06fb4d4e7405133e298f4434151f51ea2e91812615f3a56_12802.jpg" data-image-width="1280" data-image-height="1280" data-animation-name="zoomIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
+                <h6 class="u-align-center u-custom-font u-text u-text-default u-text-font u-text-7">50.000đ</h6>
+                <p class="u-align-left u-text u-text-8"> Hamburger không chỉ có nhân thịt bò như trước mà thay vào đó là linh hoạt các loại thịt heo, thịt gà, cá, tôm,… và cả những món chay. Thêm phần hấp dẫn là phần rau xanh giúp thực khách không bị ngấy khi thưởng thức.</p>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-radius-50 u-repeater-item u-shape-round u-white u-list-item-3">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <h5 class="u-align-center u-custom-font u-font-merriweather u-text u-text-default u-text-9"> Pizza</h5>
+                <img class="u-expanded-width u-image u-image-3" src="images/53d13c7563f87a2f209b0038b562ef8874feb833b77020b889b72fec53a22b3e088c4cc3a1a4657a562e1c7b22442e986b621d7f461bfc7a0019ff_1280.jpg" data-image-width="1280" data-image-height="853" data-animation-name="zoomIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
+                <h6 class="u-align-center u-custom-font u-text u-text-default u-text-font u-text-10">200.000đ</h6>
+                <p class="u-align-left u-text u-text-11"> Pizza Sunflower là sự kết hợp tinh tế, hài hòa giữa công thức truyền thống của đầu bếp Ý với nguyên liệu tươi ngon của Việt Nam. Đến với Pizza Sunflower quý khách sẽ được thưởng thức những chiếc Pizza luôn nóng hổi, hương vị thơm ngon đậm đà, đặc trưng của&nbsp;‹100% Pizza Tươi›.</p>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-radius-50 u-repeater-item u-shape-round u-white u-list-item-4">
+              <div class="u-container-layout u-similar-container u-container-layout-4">
+                <h5 class="u-align-center u-custom-font u-font-merriweather u-text u-text-default u-text-12">Classic Ricotta</h5>
+                <img class="u-expanded-width u-image u-image-4" src="images/2.png" data-image-width="911" data-image-height="889" data-animation-name="zoomIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
+                <h6 class="u-align-center u-custom-font u-text u-text-default u-text-font u-text-13">150.000đ</h6>
+                <p class="u-align-left u-text u-text-14"> Nguyên liệu chính làm món salad này có thể rau xanh, trái cây, thực phẩm giàu chất đạm và không thể thiếu nước sốt đặc như sốt mayonnaise&nbsp;. Phần nước sốt đặc sẽ giúp cho các nguyên liệu dường như được kết nối với nhau. Thậm chí món salad này có thể được sử dụng làm nhân cho một số bánh sandwich.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-4" id="carousel_eb17">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-custom-font u-font-merriweather u-text u-text-1">MÓN ĂN NỔI BẬT</h2>
+        <p class="u-text u-text-2">Hãy tham khảo những món ăn nổi bật của cửa hàng chúng tôi.<br>Đây là những món ăn được nhiều khách hàng đánh giá tốt.
+        </p>
+        <div id="carousel-8627" data-interval="5000" data-u-ride="carousel" class="u-carousel u-expanded-width u-slider u-slider-1">
+          
+          <div class="u-carousel-inner" role="listbox">
+            <div class="u-active u-carousel-item u-container-style u-slide">
+              <div class="u-container-layout u-valign-middle u-container-layout-1">
+                <div class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-on-hover u-gallery-1">
+                  <div class="u-gallery-inner u-gallery-inner-1">
+                    <div class="u-effect-fade u-gallery-item u-radius-50 u-shape-round">
+                      <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+                        <img class="u-back-image u-expanded" src="images/86ec58f42a0a092eb3ec9700cd1c3bfc6bab5b6017cde914cccc45b29bba70828272aa6f9789d560d3a1504f5bd2e63f24d15ccadd146f178034b4_12801.jpg">
+                      </div>
+                      <div class="u-over-slide u-shading u-over-slide-1">
+                        <h3 class="u-gallery-heading"></h3>
+                        <p class="u-gallery-text"></p>
+                      </div>
+                    </div>
+                    <div class="u-effect-fade u-gallery-item u-radius-50 u-shape-round" data-href="https://vn.images.search.yahoo.com/yhs/search;_ylt=AwrxhWoxsZVhwnMAWgiXVQx.;_ylu=Y29sbwMEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=humberger&amp;type=fc_A841F23B353_s69_g_e_d_n2000_c24&amp;param1=7&amp;param2=eJwtjMEOgjAQRH9lj5qYstCylvIZngzhUKBgQ6EEUYxf72o8zZvZ2Rl8V5X15ZoiyjSl6lTP7DNEZPyeWNpvohj88iPMjEY0lBVno4ucjFOdNrm0aLRretNT03B7cJHrz5nxYZmm%2BPYh2CQXCIfdz13c7zBvkKLAEjggVcKL1BHssgS3u2b0W5LLs5AEh%2FG2TeEEwY8OBteO8QjtbY2TSwoeFIqkFlTA3fZ29f%2BvDyz9QWU%3D&amp;hsimp=yhs-1955&amp;hspart=fc&amp;ei=UTF-8&amp;fr=yhs-fc-1955#id=12&amp;iurl=https%3A%2F%2Fmedia.proteinfabrikken.no%2F7-c4f2bc40-4877-11e8-be3c-2dc232ff4737%2Fskjermbilde-2018-04-25-kl-125933.jpg&amp;action=click">
+                      <div class="u-back-slide" data-image-width="1280" data-image-height="1280">
+                        <img class="u-back-image u-expanded" src="images/6ae0d7fad7449ce23f3d2e283ae8788c80820e07f847d82a168f5cc710206cdec25411a06fb4d4e7405133e298f4434151f51ea2e91812615f3a56_12802.jpg">
+                      </div>
+                      <div class="u-over-slide u-shading u-over-slide-2">
+                        <h3 class="u-gallery-heading"></h3>
+                        <p class="u-gallery-text"></p>
+                      </div>
+                    </div>
+                    <div class="u-effect-fade u-gallery-item u-radius-50 u-shape-round">
+                      <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+                        <img class="u-back-image u-expanded" src="images/5832f25937ed00a9ecf98e31f10580f9658ac1c7fa799cb51147caf5f26ab5f19b869caf88089af93c101c05c51a6ef664190c041ca5c610b9f3f2_1280.jpg">
+                      </div>
+                      <div class="u-over-slide u-shading u-over-slide-3">
+                        <h3 class="u-gallery-heading"></h3>
+                        <p class="u-gallery-text"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-right u-clearfix u-section-5" id="carousel_8f80">
+      <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-align-left u-container-style u-layout-cell u-size-26 u-layout-cell-1">
+              <div class="u-container-layout u-valign-top u-container-layout-1">
+                <img class="u-image u-image-default u-image-1" src="images/33510142.png" alt="" data-image-width="667" data-image-height="358">
+                <div class="u-align-center u-container-style u-group u-palette-4-base u-shape-circle u-group-1">
+                  <div class="u-container-layout u-valign-middle u-container-layout-2">
+                    <h2 class="u-custom-font u-font-merriweather u-text u-text-body-alt-color u-text-default u-text-1" data-animation-name="flash" data-animation-duration="1500" data-animation-delay="0" data-animation-direction="">30%<br>off
+                    </h2>
+                  </div>
+                </div>
+                <h6 class="u-custom-font u-font-merriweather u-text u-text-default u-text-2">ưu đãi khách hàng có thẻ thành viên</h6>
+                <p class="u-text u-text-body-color u-text-default u-text-3">Khuyên mãi lớn: Khách hàng khi tới cửa hàng, nếu có thẻ thành viên sẽ được giảm tới 30% cho đơn hàng.<br>
+                  <br>Hãy ghé cửa hàng và thưởng thức những món ăn ngon của chúng tôi.<br>
+                  <br>Hân hạnh!
+                </p>
+              </div>
+            </div>
+            <div class="u-container-style u-image u-layout-cell u-size-34 u-image-2" data-image-width="864" data-image-height="864">
+              <div class="u-container-layout u-container-layout-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-image u-section-6" id="carousel_ace9" data-image-width="1920" data-image-height="999">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-custom-font u-font-merriweather u-text u-text-palette-4-dark-3 u-text-1"> 100% AN TOÀN, VỆ SINH THỰC PHẨM</h2>
+        <p class="u-text u-text-2"> NSDM&nbsp;Fast Food là giải pháp ẩm thực chuyên nghiệp cho mọi sự kiện, cam kết đem đến cho bạn những bữa ăn ngon miệng, sang trọng, chu đáo, lịch sự và đảm bảo an toàn vệ sinh thực phẩm.Với mong muốn nhận được nhiều hơn nữa sự hài lòng từ thực khách khi thưởng thức những món ăn ngon, ​NSDM&nbsp;Fast Food hiện nay đã có thêm dịch vụ shipping. Bên cạnh đó, dịch vụ tiếp tục được nâng cấp bằng thực đơn sang trọng, đa dạng cùng mức giá phù hợp không thế chối từ.</p>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-grey-5 u-section-7" id="sec-bd61">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">DỊCH VỤ</h2>
+        <p class="u-text u-text-default u-text-2">Những ưu đãi dịch vụ hấp dẫn của cửa hàng chúng tôi! </p>
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <span class="u-icon u-icon-circle u-palette-2-light-1 u-spacing-21 u-icon-1">
+                <i class="fab fa-reddit-square"></i>
+                </span>
+                <h3 class="u-align-center u-text u-text-3">Đảm bảo &amp; Chất lượng</h3>
+                <p class="u-align-center u-text u-text-4"> Chúng tôi luôn cung cấp thực phẩm sạch và chất lượng tốt nhất cho bạn.</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <span class="u-icon u-icon-circle u-palette-2-light-1 u-spacing-21 u-icon-2">
+                  <i class="fas fa-ambulance"></i>
+                </span>
+                <h3 class="u-align-center u-text u-text-5">Vận chuyển<br>&nbsp;mọi nơi
+                </h3>
+                <p class="u-align-center u-text u-text-6"> Giao tận nơi nhanh chóng các khu vực nội thành, Vui lòng liên hệ chúng tôi !</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <span class="u-icon u-icon-circle u-palette-2-light-1 u-spacing-21 u-icon-3">
+                  <i class="fas fa-life-ring"></i>
+                </span>
+                <h3 class="u-align-center u-text u-text-7">Chúng tôi hỗ trợ 24/7</h3>
+                <p class="u-align-center u-text u-text-8"> Chúng tôi luôn sẵn sàng bất kỳ lúc nào bạn thắc mắc và thông thường mỗi ngày</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-palette-3-base u-section-8" id="carousel_0ea5">
+      <div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+        <div class="u-align-center u-container-style u-expanded-width-sm u-expanded-width-xs u-group u-shape-rectangle u-group-1">
+          <div class="u-container-layout u-valign-middle u-container-layout-1">
+            <h2 class="u-custom-font u-font-merriweather u-text u-text-body-alt-color u-text-default u-text-1">Đặt hàng ngay</h2>
+            <p class="u-text u-text-body-alt-color u-text-2">Hãy để chúng tôi mang đến cho quý vị nhưng món ăn ngon, vệ sinh, sang trọng và tinh tế.&nbsp;</p>
+            <div class="u-form u-form-1">
+              <form action="#" method="POST" class="u-clearfix u-form-spacing-21 u-form-vertical u-inner-form" style="padding: 0px;" source="custom">
+                <div class="u-form-group u-form-name u-form-group-1">
+                  <label for="name-9ac7" class="u-form-control-hidden u-label"></label>
+                  <input type="text" placeholder="Enter your Name" id="name-9ac7" name="name" class="u-border-2 u-border-palette-4-base u-input u-input-rectangle u-radius-50" required="">
+                </div>
+                <div class="u-form-address u-form-group u-form-group-2">
+                  <label for="address-1aaf" class="u-form-control-hidden u-label"></label>
+                  <input type="text" placeholder="Enter your address" id="address-1aaf" name="address" class="u-border-2 u-border-palette-4-base u-input u-input-rectangle u-radius-50" required="">
+                </div>
+                <div class="u-form-email u-form-group">
+                  <label for="email-ef64" class="u-form-control-hidden u-label">Email</label>
+                  <input type="email" placeholder="Email" id="email-ef64" name="email" class="u-border-2 u-border-palette-4-base u-input u-input-rectangle u-radius-50" required="">
+                </div>
+                <div class="u-form-group u-form-phone u-form-group-4">
+                  <label for="phone-aada" class="u-form-control-hidden u-label"></label>
+                  <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Enter your phone (e.g. +14155552675)" id="phone-aada" name="phone" class="u-border-2 u-border-palette-4-base u-input u-input-rectangle u-radius-50" required="">
+                </div>
+                <div class="u-form-group u-form-message u-form-group-5">
+                  <label for="message-6cda" class="u-form-control-hidden u-label"></label>
+                  <textarea placeholder="Enter your message" rows="4" cols="50" id="message-6cda" name="message" class="u-border-2 u-border-palette-4-base u-input u-input-rectangle u-radius-50" required=""></textarea>
+                </div>
+                <div class="u-form-group u-form-submit">
+                  <a href="#" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-3-base u-palette-4-base u-radius-50 u-btn-1">Đặt hàng ngay<br>
+                  </a>
+                  <input type="submit" value="submit" class="u-form-control-hidden">
+                </div>
+                <div class="u-form-send-message u-form-send-success">#FormSendSuccess</div>
+                <div class="u-form-send-error u-form-send-message">#FormSendError</div>
+                <input type="hidden" value="" name="recaptchaResponse">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-black u-clearfix u-section-9" id="sec-1251">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-1">Người thành lập cửa hàng</h1>
+        <p class="u-text u-text-default u-text-2">Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma, which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition.&nbsp;</p>
+        <div class="u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-1" data-animation-name="slideIn" data-animation-duration="2250" data-animation-delay="0" data-animation-direction="Left">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
+                <div alt="" class="u-image u-image-circle u-image-1" data-image-width="826" data-image-height="820"></div>
+                <h4 class="u-align-center u-text u-text-default u-text-3">Hua Thi Son</h4>
+                <p class="u-text u-text-default u-text-palette-2-base u-text-4">programmer</p>
+                <p class="u-text u-text-5" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0"> Học tại trường Đại học Bách Khoa thành phố Hồ Chí Minh chuyên ngành Khoa Học Máy Tính.</p>
+                
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-2" data-animation-name="slideIn" data-animation-duration="2250" data-animation-delay="0" data-animation-direction="Left">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
+                <div alt="" class="u-image u-image-circle u-image-2" data-image-width="1080" data-image-height="1084"></div>
+                <h4 class="u-align-center u-text u-text-default u-text-6">Tran Yen Nhi</h4>
+                <p class="u-text u-text-default u-text-palette-2-base u-text-7">programmer</p>
+                <p class="u-text u-text-8" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0"> Học tại trường Đại học Bách Khoa thành phố Hồ Chí Minh chuyên ngành Khoa Học Máy Tính.</p>
+               
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-3" data-animation-name="slideIn" data-animation-duration="2250" data-animation-delay="0" data-animation-direction="Left">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
+                <div alt="" class="u-image u-image-circle u-image-3" data-image-width="960" data-image-height="960"></div>
+                <h4 class="u-align-center u-text u-text-default u-text-9">Nguyen Trong Minh</h4>
+                <p class="u-text u-text-default u-text-palette-2-base u-text-10">programmer</p>
+                <p class="u-text u-text-11" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0"> Học tại trường Đại học Bách Khoa thành phố Hồ Chí Minh chuyên ngành Khoa Học Máy Tính.</p>
+                
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-4" data-animation-name="slideIn" data-animation-duration="2250" data-animation-delay="0" data-animation-direction="Left">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4">
+                <div alt="" class="u-image u-image-circle u-image-4" data-image-width="1072" data-image-height="1440"></div>
+                <h4 class="u-align-center u-text u-text-default u-text-12">Nguyen kim Dat</h4>
+                <p class="u-text u-text-default u-text-palette-2-base u-text-13">programmer</p>
+                <p class="u-text u-text-14" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0"> Học tại trường Đại học Bách Khoa thành phố Hồ Chí Minh chuyên ngành Khoa Học Máy Tính.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-clearfix u-footer u-grey-80" id="sec-0be9"><div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-center-sm u-align-center-xs u-align-left-md u-align-left-xl u-container-style u-layout-cell u-left-cell u-size-20 u-size-20-md u-layout-cell-1">
+                <div class="u-container-layout u-valign-middle u-container-layout-1"><!--position-->
+                  <div data-position="" class="u-position"><!--block-->
+                    <div class="u-block">
+                      <div class="u-block-container u-clearfix"><!--block_header-->
+                        <h5 class="u-block-header u-text"><!--block_header_content-->Địa điểm<!--/block_header_content--></h5><!--/block_header--><!--block_content-->
+                        <div class="u-block-content u-text"><!--block_content_content-->KTX Khu A, ĐHQG khu phố 6, phường Linh Trung TP. Thủ Đức TP.Hồ Chí Minh.<!--/block_content_content--></div><!--/block_content-->
+                      </div>
+                    </div><!--/block-->
+                  </div><!--/position-->
+                </div>
+              </div>
+              <div class="u-align-center-sm u-align-right-md u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-2">
+                <div class="u-container-layout u-valign-middle u-container-layout-2">
+                  <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="1280" data-image-height="987">
+                    <img src="images/a5107dd250c17771c464c6c28bb2579c2424e9c03484bb5c0f69345cb230e821225bfd018b4482a2d0e8c3595200f04f78264006ab0217878a4574_1280.png" class="u-logo-image u-logo-image-1">
+                  </a>
+                </div>
+              </div>
+              <div class="u-align-center-sm u-align-center-xs u-align-left-md u-align-right-lg u-align-right-xl u-container-style u-layout-cell u-right-cell u-size-20 u-size-20-md u-layout-cell-3">
+                <div class="u-container-layout u-valign-middle u-container-layout-3">
+                  <div class="u-social-icons u-spacing-10 u-social-icons-1">
+                    <a class="u-social-url" title="facebook" target="_blank" href="">
+                      <span class="u-icon u-social-facebook u-social-icon u-icon-1">
+                        <i class="fab fa-facebook"></i>
+                      </span>
+                    </a>
+                    <a class="u-social-url" title="twitter" target="_blank" href="">
+                      <span class="u-icon u-social-icon u-social-twitter u-icon-2">
+                        <i class="fab fa-instagram"></i>
+                      </span>
+                    </a>
+                    <a class="u-social-url" title="linkedin" target="_blank" href="">
+                      <span class="u-icon u-social-icon u-social-linkedin u-icon-4">
+                        <i class="fab fa-tiktok"></i>
+                      </span>
+                    </a>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></footer>
+  </body>
+</html>

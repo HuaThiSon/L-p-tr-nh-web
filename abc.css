@@ -1,0 +1,202 @@
+.u-clearfix:after,
+.u-clearfix:before {
+  content: '';
+  display: table;
+}
+.u-clearfix:after {
+  clear: both;
+}
+
+.u-stick-footer .u-footer {
+    margin-top: auto;
+  }
+  .u-hide-header .u-header,
+  .u-hide-footer .u-footer {
+    display: none;
+  }
+
+  
+  
+  
+
+  .u-footer .u-sheet-1 {
+    min-height: 211px;
+  }
+  
+  .u-footer .u-layout-wrap-1 {
+    margin: 60px 0;
+  }
+  
+  .u-footer .u-layout-cell-1 {
+    min-height: 121px;
+  }
+  
+  .u-footer .u-container-layout-1 {
+    padding: 20px 30px;
+  }
+  
+  .u-footer .u-layout-cell-2 {
+    min-height: 170px;
+  }
+  
+  .u-footer .u-container-layout-2 {
+    padding: 20px 0;
+  }
+  
+  .u-footer .u-image-1 {
+    height: 113px;
+    width: 146px;
+    margin: 0 auto;
+  }
+  
+  .u-footer .u-logo-image-1 {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .u-footer .u-layout-cell-3 {
+    min-height: 121px;
+  }
+  
+  .u-footer .u-container-layout-3 {
+    padding: 20px 0;
+  }
+  
+  .u-footer .u-social-icons-1 {
+    white-space: nowrap;
+    height: 24px;
+    min-height: 16px;
+    width: 161px;
+    min-width: 120px;
+    margin: 0 20px 0 auto;
+  }
+  
+  .u-footer .u-icon-1 {
+    color: rgb(59, 89, 152) !important;
+  }
+  
+  .u-footer .u-icon-2 {
+    color: rgb(85, 172, 238) !important;
+  }
+  
+  .u-footer .u-icon-3 {
+    color: rgb(197, 54, 164) !important;
+  }
+  
+  .u-footer .u-icon-4 {
+    color: rgb(0, 122, 185) !important;
+  }
+  
+  .u-footer .u-icon-5 {
+    height: 100%;
+    color: rgb(53, 194, 53) !important;
+  }
+  @media (max-width: 1199px) {
+    .u-footer .u-layout-wrap-1 {
+      margin-right: initial;
+      margin-left: initial;
+    }
+  
+    .u-footer .u-container-layout-1 {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  
+    .u-footer .u-layout-cell-2 {
+      min-height: 121px;
+    }
+  
+    .u-footer .u-image-1 {
+      width: 146px;
+    }
+  
+    .u-footer .u-container-layout-3 {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  
+    .u-footer .u-social-icons-1 {
+      width: 127px;
+      min-width: 94px;
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 991px) {
+    .u-footer .u-container-layout-1 {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  
+    .u-footer .u-image-1 {
+      margin-right: 20px;
+    }
+  
+    .u-footer .u-container-layout-3 {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  
+    .u-footer .u-social-icons-1 {
+      margin-right: auto;
+      margin-left: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    .u-footer .u-sheet-1 {
+      min-height: 151px;
+    }
+  
+    .u-footer .u-container-layout-1 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .u-footer .u-image-1 {
+      margin-right: auto;
+    }
+  
+    .u-footer .u-container-layout-3 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .u-footer .u-social-icons-1 {
+      margin-left: auto;
+    }
+  }
+  
+.u-grey-80,
+.u-body.u-grey-80,
+.u-container-style.u-grey-80:before,
+.u-container-layout.u-grey-80:before,
+.u-table-alt-grey-80 tr:nth-child(even) {
+  color: #ffffff;
+  background-color: #333333;
+}
+.u-button-style.u-grey-80,
+.u-button-style.u-grey-80[class*="u-border-"] {
+  color: #ffffff !important;
+  background-color: #333333 !important;
+}
+.u-button-style.u-grey-80:hover,
+.u-button-style.u-grey-80[class*="u-border-"]:hover,
+.u-button-style.u-grey-80:focus,
+.u-button-style.u-grey-80[class*="u-border-"]:focus,
+.u-button-style.u-button-style.u-grey-80:active,
+.u-button-style.u-button-style.u-grey-80[class*="u-border-"]:active,
+.u-button-style.u-button-style.u-grey-80.active,
+.u-button-style.u-button-style.u-grey-80[class*="u-border-"].active,
+li.active > .u-button-style.u-button-style.u-grey-80,
+li.active > .u-button-style.u-button-style.u-grey-80[class*="u-border-"] {
+  color: #ffffff !important;
+  background-color: #2e2e2e !important;
+}
+
+.u-clearfix:after,
+.u-clearfix:before {
+  content: '';
+  display: table;
+}
+.u-clearfix:after {
+  clear: both;
+}
