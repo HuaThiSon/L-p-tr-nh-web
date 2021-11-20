@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="btl.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="btl.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <a href="javascript:void(0)" id="closebtn" class="mobile-visible" onclick="closeNav()">
+                <i class="fa fa-arrow-left"></i>
+            </a>
+            <div class="sidebar-header">
+                <h3>Điền tên cửa hàng dô đây</h3>
+            </div>
+    
+            <ul class="list-unstyled components">
+
+                <li class="active">      
+                    <a href="index.html">
+                        <i class="fa fa-home"></i>
+                        Trang chủ
+                    </a>
+                </li>
+                <li >
+                    <a href="#">
+                        <i class="fa fa-user "></i>
+                        Hồ sơ cá nhân
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="order.html">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        Đơn hàng</a>
+                </li>
+                <li>
+
+                    <a href="cart.html">
+                        <i class="fa fa-shopping-cart"></i>
+                        Giỏ hàng</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container-fluid content">
+            <div class="btn-pd">
+                <button type="button" id="sidebarCollapse" class="btn btn-info mobile-visible" onclick='openNav()'>
+                    <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                </button>
+            </div>
+            <div class="intro">
+                Xin chào quý khách, vui lòng chọn món ăn!
+            </div>
+            <div class="container-fluid foods-display">
+                <div class="row food-row">
+                    <div class="card col-lg-3 col-sm-5">
+                        <img class="card-img-top food-img" src="https://kenh14cdn.com/203336854389633024/2021/3/9/photo-1-16152645286081431737598.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Hamburger</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="price">20.000 VND</p>
+                            <button class="btn btn-info" data-toggle="modal" data-target="#AddFood">
+                                Thêm vào giỏ
+                            <i class="fa fa-cart-plus"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="card col-lg-3 col-sm-5" >
+                        <img class="card-img-top food-img" src="https://www.baolongan.vn/image/news/2019/20190414/images/salad-mon-an-giup-giam-can-chong-ngay.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Salad</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="price">20.000 VND</p>
+                            <button class="btn btn-info" data-toggle="modal" data-target="#AddFood">
+                                Thêm vào giỏ
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-sm-5" >
+                        <img class="card-img-top food-img" src="https://cdn.pastaxi-manager.onepas.vn/content/uploads/articles/nguyenhuong/bobittetva7capdochin/Bo-bit-tet-va-7-cap-do-chin-1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Beef Steak</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="price">20.000 VND</p>
+                            <button class="btn btn-info" data-toggle="modal" data-target="#AddFood">
+                                Thêm vào giỏ
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 col-sm-5" >
+                        <img class="card-img-top food-img" src="https://photo-cms-tinnhanhchungkhoan.zadn.vn/w660/Uploaded/2021/wpxlcdjwi/2021_04_22/untitled-5329.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Coco</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="price">20.000 VND</p>
+                            <button class="btn btn-info" data-toggle="modal" data-target="#AddFood">
+                                Thêm vào giỏ
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 col-sm-5" >
+                        <img class="card-img-top food-img" src="https://ameovat.com/wp-content/uploads/2016/05/cach-lam-ga-ran.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="price">20.000 VND</p>
+                            <button class="btn btn-info" data-toggle="modal" data-target="#AddFood">
+                                Thêm vào giỏ
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 col-sm-5" >
+                        <img class="card-img-top food-img" src="https://gocnhin24h.org/wp-content/uploads/2021/05/mach-ban-cach-lam-khoai-tay-chien-gion-vang-rum-thom-phuc-tai-nha-khoai-tay-chien.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Fried Potato</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="price">20.000 VND</p>
+                            <button class="btn btn-info" data-toggle="modal" data-target="#AddFood">
+                                Thêm vào giỏ
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="AddFood" tabindex="-1" role="dialog" aria-labelledby="AddFoodTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Thêm món ăn</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <img class="card-img-top food-modal-img" src="https://cdn.pastaxi-manager.onepas.vn/content/uploads/articles/nguyenhuong/bobittetva7capdochin/Bo-bit-tet-va-7-cap-do-chin-1.jpg" alt="Card image cap">
+                    <h5 class="food-modal-title">Beef Steak</h5>
+                    <p class="modal-description">Some quick example text to build on the card title and make up the bulk of the card's content.
+
+                    </p>
+                    <p class="price modal-description">Tổng giá:xxx.000</p>
+
+                </div>
+                <div class="modal-footer">
+                <input type="number" class="food-number" value="1">
+                <button type="button" class="btn btn-primary">
+                    Thêm vào giỏ
+                    <i class="fa fa-shopping-cart"></i>
+                </button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const sideBar = document.getElementById('sidebar');
+        const closeBtn = document.getElementById('closebtn');
+        
+        function openNav() {
+            sideBar.style.width = "250px";
+        }
+        function closeNav() {
+            sideBar.style.width = "0";
+        }
+    </script>
+</body>
+</html>
