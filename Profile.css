@@ -1,66 +1,68 @@
 .imageChange {
-    max-width: 340px;
-    height: auto;
+max-width: 340px;
+height: auto;
+float: left;
+margin-top: 50px;
+border-radius: 50%;
+}
+.infomation{
+    /* text-align: center; */
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top:40px;
+}
+.Name-address{
+    margin-left: 40px;
+    font-style: Trebuchet;
+    font-size: 20px;
+    margin-top: 65px;
+}
+.btn{
+    margin-top:40px;
+    text-align: center;
+    height:50px;
+    width:141px;
+}
+.change-info{
+    padding:40px;
+}
+.change-img{
+    padding: 0px;
+}
+.container{
+    /* background-color: rgba(209, 201, 201, 0.212); */
+    height:auto;
+}
+.body{
+    background-color:rgb(20, 124, 124);
+}
+img {
+    vertical-align: middle;
+    border-style: none;
     float: left;
-    margin-top: 50px;
     border-radius: 50%;
+    max-width: 281px;
+}
+.btn-submit{
+    text-align: center;
+}
+.change-info-css{
+    text-align: center;
+}
+@media (max-width: 1024px) {
+.imageChange {
+    max-width: 233px;
+    height: auto;
+    margin-top: 63px;
+    border-radius: 50%;
+}
+}
+@media (max-width: 812px) {
+    .container-fluid{
+        /* background-color:rgb(182, 178, 174); */
+        height:900px;
     }
-    .infomation{
-        /* text-align: center; */
-        font-size: 30px;
-        margin-left: 40px;
-        margin-top:40px;
+    .doianh{
+    padding: 77px;
     }
-    .Name-address{
-        margin-left: 40px;
-        font-style: Trebuchet;
-        font-size: 20px;
-        margin-top: 65px;
-    }
-    .btn{
-        margin-top:40px;
-        text-align: center;
-    }
-    .change-info{
-        padding:40px;
-    }
-    .change-img{
-        padding: 0px;
-    }
-    .container{
-        /* background-color: rgba(209, 201, 201, 0.212); */
-        height:auto;
-    }
-    .body{
-        background-color:rgb(20, 124, 124);
-    }
-    img {
-        vertical-align: middle;
-        border-style: none;
-        float: left;
-        border-radius: 50%;
-        max-width: 281px;
-    }
-    .btn-submit{
-        text-align: center;
-    }
-    .change-info-css{
-        text-align: center;
-    }
-    @media (max-width: 1024px) {
-    .imageChange {
-        max-width: 233px;
-        height: auto;
-        margin-top: 63px;
-        border-radius: 50%;
-    }
-    }
-    @media (max-width: 812px) {
-        .container-fluid{
-            /* background-color:rgb(182, 178, 174); */
-            height:900px;
-        }
-        .doianh{
-        padding: 77px;
-        }
-    }
+}
