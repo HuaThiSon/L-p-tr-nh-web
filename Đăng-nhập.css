@@ -13,7 +13,11 @@
   min-height: 572px;
   animation-duration: 1750ms;
 }
-
+@media (max-width: 1366px) {
+  .u-section-1 .u-container-layout-2 {
+    padding: 30px !important;
+}
+  }
 .u-section-1 .u-container-layout-1 {
   padding: 30px 60px;
 }
@@ -180,4 +184,7 @@
 }
 .navbar-inverse .navbar-toggle{
   background-color:black;
+}
+section{
+  background-color:rgb(170, 175, 185);
 }

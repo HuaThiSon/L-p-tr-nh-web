@@ -12,7 +12,9 @@
   background-position: 50% 50%;
   animation-duration: 1750ms;
 }
-
+section {
+  background-color:rgb(170, 175, 185);
+}
 .u-section-1 .u-container-layout-1 {
   padding: 30px 60px;
 }
@@ -90,7 +92,14 @@
     margin-left: 0;
   }
 }
-
+@media (max-width: 1366px) {
+  .u-section-1 .u-container-layout-2 {
+    padding: 30px;
+}
+ .b{
+   text-align: center;
+ }
+  }
 @media (max-width: 991px) {
   .u-section-1 .u-sheet-1 {
     min-height: 437px;

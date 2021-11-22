@@ -192,8 +192,9 @@ ol {
 .u-section-1 .u-container-layout-1{
   color:white;
 }
-
-
+.nav_all:hover{
+  color:rgb(88, 88, 252) !important;
+}
 .u-btn {
   /*display: inline-block;*/
   display: table;

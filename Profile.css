@@ -26,10 +26,24 @@ border-radius: 50%;
 .change-img{
     padding: 0px;
 }
-.container{
+.container-fluid{
     background-color:rgb(182, 178, 174);
-    height:auto;
+    height:700px;
 }
 .body{
     background-color:rgb(20, 124, 124);
+}
+@media (max-width: 1024px) {
+.imageChange {
+    max-width: 233px;
+    height: auto;
+    margin-top: 63px;
+    border-radius: 50%;
+}
+}
+@media (max-width: 812px) {
+    .container-fluid{
+        background-color:rgb(182, 178, 174);
+        height:900px;
+    }
 }
