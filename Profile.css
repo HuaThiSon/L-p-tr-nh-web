@@ -1,6 +1,7 @@
 .imageChange {
-max-width: 358px;
+max-width: 340px;
 height: auto;
+float: left;
 margin-top: 50px;
 border-radius: 50%;
 }
@@ -26,13 +27,22 @@ border-radius: 50%;
 .change-img{
     padding: 0px;
 }
-.container-fluid{
-    background-color:rgb(182, 178, 174);
-    height:700px;
+.container{
+    background-color: rgba(209, 201, 201, 0.212);
+    height:auto;
 }
 .body{
     background-color:rgb(20, 124, 124);
 }
+img {
+    vertical-align: middle;
+    border-style: none;
+    float: left;
+    border-radius: 50%;
+    max-width: 281px;
+}
+
+
 @media (max-width: 1024px) {
 .imageChange {
     max-width: 233px;
@@ -43,7 +53,10 @@ border-radius: 50%;
 }
 @media (max-width: 812px) {
     .container-fluid{
-        background-color:rgb(182, 178, 174);
+        /* background-color:rgb(182, 178, 174); */
         height:900px;
+    }
+    .doianh{
+    padding: 77px;
     }
 }
