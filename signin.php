@@ -1,3 +1,34 @@
+
+<?php 
+    if(session_status() == PHP_SESSION_NONE){session_start();}
+?>
+
+<?php 
+    echo "<script type='text/javascript'>document.getElementById('error').innerHTML='';</script>";
+    if(isset($_POST['email'])){
+        $db = mysqli_connect('localhost','root','','fastfoodstore');
+        if(!isset($_POST['email'])) $_POST['email'] = "";
+        $query = "SELECT * FROM account WHERE Email=\"".$_POST['email']."\"";
+        $result = mysqli_query($db, $query);
+        $a = mysqli_fetch_assoc($result);
+        if(mysqli_num_rows($result) !== 1){
+            echo "<script type='text/javascript'>document.getElementById('error').innerHTML='Email này chưa đăng ký tài khoản';</script>";
+        }
+        else{
+            $query = "SELECT * FROM account WHERE Email=\"".$_POST['email']."\" AND Password=\"".$_POST['password']."\"";
+            $result = mysqli_query($db, $query);
+            $a = mysqli_fetch_assoc($result);
+            if(mysqli_num_rows($result) === 0){
+                echo "<script type='text/javascript'>document.getElementById('error').innerHTML='Mật khẩu chưa chính xác';</script>";
+            }
+            else {
+                header('location: ./afterLogin');
+                $_SESSION['accountID'] = $a['AccountID'];
+            }
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
@@ -23,9 +54,9 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a class="nav_all" href="Trang-chủ-.html">Trang chủ</a></li>
-          <li><a class="nav_all" href="Đăng-ký.html"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
-          <li  class="active" ><a class="nav_all href="Đăng-nhập.html"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+          <li><a class="nav_all" href="index.html">Trang chủ</a></li>
+          <li><a class="nav_all" href="signup.php"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
+          <li  class="active" ><a class="nav_all" href="signinp.php"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
         </ul>
       </div>
     </div>
@@ -53,17 +84,16 @@
                   <h1 class="u-text u-text-body-alt-color u-text-default u-title u-text-3"><b>Welcome NSDM! </b>
                   </h1>
                   <div class="u-form u-form-1">
-                    <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;">
+                    <form action="signin.php" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;">
+                      <div id="error" style="color: red;"></div>
                       <div class="u-form-email u-form-group">
-                        <input type="email" placeholder="Enter a valid email address" id="email-0753" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+                        <input type="email" placeholder="Email người dùng" id="email-0753" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
                       </div>
                       <div class="u-form-group u-form-group-2">
-                        <input type="text" placeholder="Password" id="text-af64" name="text" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                        <input type="password" placeholder="Mật khẩu" id="text-af64" name="password" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required>
                       </div>
                       <div class="u-align-left u-form-group u-form-submit">
-                        <a href="#" class="u-btn u-btn-submit u-button-style u-btn-2">Đăng nhập<br>
-                        </a>
-                        <input type="submit" value="submit" class="u-form-control-hidden">
+                        <input type="submit" value="Đăng nhập" class="u-btn u-btn-submit u-button-style u-btn-2">
                       </div>
                     </form>
                   </div>
